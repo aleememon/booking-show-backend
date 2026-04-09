@@ -2,6 +2,7 @@ import express from "express";
 import type { Express, Response, Request, NextFunction } from "express";
 import APIResponse from "./common/utils/api-response.js";
 import authRouter from "./modules/auth/routes.js";
+import bookingRouter from "./modules/booking/routes.js";
 
 const app: Express = express();
 
@@ -18,5 +19,5 @@ app.get("/api/health", (req:Request, res:Response) => {
 // })
 
 app.use("/api/auth", authRouter);
-
+app.use("/api/booking", bookingRouter);
 export default app;
