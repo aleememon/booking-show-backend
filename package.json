@@ -5,11 +5,11 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "start": "node/dist server",
-    "build": "tsc -p .",
-    "dev": "tsc-watch --onSuccess \"node dist/server.js\"",
-    "db:push": "npx drizzle-kit push"
-  },
+  "start": "node dist/server.js",
+  "build": "tsc -p .",
+  "dev": "tsc-watch --onSuccess \"node dist/server.js\"",
+  "db:push": "npx drizzle-kit push"
+},
   "keywords": [],
   "author": "",
   "license": "ISC",
