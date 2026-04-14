@@ -7,7 +7,7 @@
   "scripts": {
     "start": "node/dist server",
     "build": "tsc -p .",
-    "dev": "tsc-watch --onSuccess \"node dist/server\"",
+    "dev": "tsc-watch --onSuccess \"node dist/server.js\"",
     "db:push": "npx drizzle-kit push"
   },
   "keywords": [],
